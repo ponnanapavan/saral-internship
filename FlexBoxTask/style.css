@@ -1,0 +1,231 @@
+body {
+    background-color: #f5f5f5; /* Light gray background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-heading {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.nav-heading h1 {
+    margin: 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.ecomm_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.ecom_left{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+.ecom_left .ecom_left_img  img{
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.ecom_right{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ecom_right .ecom_right_img img{
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+
+
+.ecomm_header h3 {
+    margin: 0;
+}
+
+.ecomm_header img {
+    width: 200px;
+    height: auto;
+}
+
+.discover_clothes {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    gap: 10px;
+    padding: 20px;
+   
+}
+
+.discover_clothes div {
+    flex: 1; /* Make each div grow to fill the available space */
+}
+
+.discover_clothes img {
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+.discover_clothes img:hover {
+    transform: scale(1.05);
+}
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+@media screen and (max-width: 450px) {
+    .nav-heading {
+       width: 450px;
+        padding: 0;
+    }
+    .footer {
+        width: 450px; /* Adjust the width as needed */
+        font-size: 1.8rem;
+    }
+    .discover_clothes div {
+        width: 500px;
+        flex: 1; /* Make each div grow to fill the available space */
+        flex-direction: column;
+        
+    }
+    
+    .discover_clothes img {
+        width: 500px;
+        height: 400px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+        margin-top: 2rem;
+    }
+    .ecomm_header{
+        width: 400px;
+        flex-direction: column;
+        gap: 4rem;
+       
+    }
+    .ecomm_header .ecom_left,
+    .ecomm_header .ecom_right{
+        flex-direction: column;
+        justify-content: center;
+        width: 600px;
+         gap: 2rem;
+    }
+     .ecomm_header .ecom_left img{
+        width: 100%;
+     }
+     .ecomm_header .ecom_right img{
+        width: 100%;
+     }
+     .ecomm_header .ecom_left h3,
+     .ecomm_header .ecom_right h3{
+        font-size: 1.7rem;
+        font-weight: bold;
+     }
+     .ecomm_header .ecom_right{
+       flex-direction: column-reverse;
+     }
+}
+@media screen and (max-width:650px){
+    .nav-heading{
+        width: 650px;
+        font-size: 1.2rem;
+    }
+    .nav-heading button{
+        font-size: 1.2rem;
+    }
+    .footer{
+         width: 650px;
+}
+    .discover_clothes div {
+        width: 100%;
+        flex: 1; /* Make each div grow to fill the available space */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .discover_clothes img {
+        width: 550px;
+        height: 450px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+        margin-top: 2rem;
+    }
+
+}
+@media screen and (max-width:1024){
+    .nav-heading{
+        width: 1024px;
+        font-size: 1.2rem;
+    }
+    .nav-heading button{
+        font-size: 1.2rem;
+    }
+    .footer{
+         width: 1024px;
+}
+    .discover_clothes div {
+        width: 1024px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .discover_clothes img {
+        width: 500px;
+        height: 450px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+        margin-top: 2rem;
+    }
+
+}
+
